@@ -4,6 +4,7 @@ pkg
 *.log
 logs
 *.rbc
+*.so
 *~
 .*.sw?
 .DS_Store
