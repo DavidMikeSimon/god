@@ -18,7 +18,7 @@ class TestGod < MiniTest::Test
     God.reset
     #Some of the tests in this file intentionally set pid_file_directory to an invalid value
     #This can cause a later test failure since God will call abort if pid_file_directory is not writable    
-    God.pid_file_directory = '~/.god/pids'
+    God.pid_file_directory = File.expand_path('~/.god/pids')
   end
 
   # applog
